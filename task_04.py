@@ -8,6 +8,10 @@
 # Задача 2024.10.30.01
 #
 # После выполнения задачи выше, сохраните полученный список слов в файл words.txt.
+
+# Задача 2024.10.30.02
+#
+# Напишите тест, который проверяет, что в строке находится всего одно слово.
 import zipfile
 from zipfile import ZipFile
 from pptx import Presentation
@@ -51,9 +55,17 @@ def extract():
                 for i in word:
                     f.write(i + '\n')
 
+
+
+
     except zipfile.BadZipFile as archive:
         print("error")
 
+
+# def one_word(s):
+#     file = open("words.txt")
+#     text = file.read()
+#     print(text)
 
 
 if __name__ == '__main__':
